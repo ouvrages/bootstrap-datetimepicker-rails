@@ -1,0 +1,11 @@
+#!/bin/sh
+
+cp vendor/bootstrap-datetimepicker/src/js/bootstrap-datetimepicker.js \
+  vendor/assets/javascripts/bootstrap-datetimepicker.js
+
+for i in vendor/bootstrap-datetimepicker/src/js/locales/*; do
+  cp $i vendor/assets/javascripts/
+done
+
+cp vendor/bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css \
+  vendor/assets/stylesheets/bootstrap-datetimepicker.css
